@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Ti ❤️</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <audio id="love-audio" autoplay loop>
+  <source src="audio/amor.mp4" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+
+<header class="banner">
+  <h1>Un pedacito de mi amor para ti 💕</h1>
+  <p>Hecho con todo mi corazón 💖</p>
+</header>
+
+<button id="music-btn" onclick="toggleMusic()">🎵 Reproducir / Pausar</button>
+
+<p class="instructions">Selecciona las imágenes y descubre lo que hay detrás 💕</p>
+
+
+  <!-- GALERÍA -->
+  <section class="gallery">
+    <div class="card" onclick="flip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/amor3.jpg.webp" alt="foto 1" />
+        </div>
+        <div class="card-back">💖“Contigo entendí que el amor no se busca, se encuentra… y yo te encontré a ti.”❤️</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/amor4.jpg.webp" alt="foto 2" />
+        </div>
+        <div class="card-back">💕“Eres mi persona favorita, mi lugar seguro y mi sonrisa más sincera.” 🥰</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/amor2.jpg.webp" alt="foto 2" />
+        </div>
+        <div class="card-back">✨
+“Te amo en los pequeños momentos, en las risas, y en cada latido de mi corazón.” 🥰</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="flip(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/amor1.jpg.webp" alt="foto 3" />
+        </div>
+        <div class="card-back">💞“Mi corazón te eligió incluso antes de que yo lo entendiera.” 💖</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI MEMORAMA -->
+  <section class="memorama">
+    <h2>Memorama del amor 💘</h2>
+    <div class="memory-game" id="memory-game"></div>
+    <p id="status"></p>
+  </section>
+
+  <button class="reset-btn" onclick="restartGame()">
+  Reiniciar 💞
+</button>
+
+<footer class="footer">
+  <p>Hecho con amor 💖 solo para ti</p>
+  <p>&copy; 2026 ChikaCeron. Todos los derechos reservados.</p>
+</footer>
+
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
